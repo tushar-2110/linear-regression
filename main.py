@@ -3,7 +3,7 @@ from pydantic import BaseModel
 import joblib
 import pandas as pd
 
-model = joblib.load("housepricemodel.pk")
+model = joblib.load("housepricemodel.pkl")
 app = FastAPI()
 
 class HouseFeatures(BaseModel):
